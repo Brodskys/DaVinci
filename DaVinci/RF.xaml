@@ -1,0 +1,26 @@
+﻿<Window x:Class="DaVinci.RF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaVinci"
+        mc:Ignorable="d" Height="478.5" Width="803.5" WindowStartupLocation="CenterScreen" Closing="Window_Closing" ResizeMode="CanMinimize" Icon="Im/Lg.png" Background="#FF727272" Title="DaVinci">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="RF_im" HorizontalAlignment="Left" Height="406" Margin="0,19,0,0" VerticalAlignment="Top" Width="413" Source="/DaVinci;component\Im\RF_artists\Ivaz.png" />
+        <Rectangle x:Name="rct" Fill="#FF625D68" Height="45" Margin="618,72,0,0" RadiusX="9" Stroke="#FF131111" StrokeThickness="0" Width="9" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="Ivaz" Content="Иван Айвазовский" HorizontalAlignment="Left" Margin="414,72,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Ivaz_Click" />
+        <Button x:Name="Kz_Mal" Content="Казимир Малевич" HorizontalAlignment="Left" Margin="414,122,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Kz_Mal_Click"/>
+        <Button x:Name="Repin" Content="Илья Репин" HorizontalAlignment="Left" Margin="414,172,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Repin_Click"/>
+        <Button x:Name="Shihkin" Content="Иван Шишкин" HorizontalAlignment="Left" Margin="414,223,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Shihkin_Click"/>
+        <Button x:Name="Syrikov" Content="Василий Суриков" HorizontalAlignment="Left" Margin="414,273,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Syrikov_Click"/>
+        <Button x:Name="Serov" Content="Валентин  Серов" HorizontalAlignment="Left" Margin="414,323,0,0" VerticalAlignment="Top" Width="203" Height="45" Click="Serov_Click"/>
+        <Image x:Name="help" Margin="0,0,757,415" Source="Im/vopr.png" Stretch="Fill" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+        <Label x:Name="_3" Content="Выбор направления поиска" HorizontalAlignment="Left" Margin="565,1,0,0" VerticalAlignment="Top" Height="35" Width="232" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="_2" Content="Выбор художника" HorizontalAlignment="Left" Margin="420,363,0,0" VerticalAlignment="Top" Height="35" Width="204" FontSize="18" FontFamily="Arial Black"/>
+        <Label x:Name="_1" Content="Фотография художника" HorizontalAlignment="Left" Margin="70,415,0,-1" VerticalAlignment="Top" Height="35" Width="300" FontSize="18" FontFamily="Arial Black"/>
+
+    </Grid>
+</Window>

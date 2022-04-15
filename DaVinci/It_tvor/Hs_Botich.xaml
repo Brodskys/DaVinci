@@ -1,0 +1,64 @@
+﻿<Window x:Class="DaVinci.It_tvor.Hs_Botich"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaVinci.It_tvor"
+        xmlns:editors="http://schemas.actiprosoftware.com/winfx/xaml/editors" 
+        mc:Ignorable="d" Height="638.395" Width="785.929" Background="#FFEEECE0" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Closing="Window_Closing" Icon="/DaVinci;component/Im/Lg.png">
+    <Grid Margin="0,0,4,0">
+
+        <RichTextBox HorizontalAlignment="Left" Height="599" VerticalAlignment="Top" IsReadOnly="True"  Width="769" Background="#FFEEECE0"  ScrollViewer.VerticalScrollBarVisibility="Auto" Focusable="False" FontSize="16" Block.LineHeight="6"  >
+
+
+            <FlowDocument>
+                <Paragraph TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Биография Сандро Боттичелли"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Сандро Боттичелли (1444 – 1510) – флорентийский художник эпохи ренессанса, чьим настоящим именем было Алессандро ди Мариано Филипепи."/>
+                    <Run Text="  "/>
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Родился он во Флоренции в 1445."/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="                                    "/>
+                    <Run Text=" "/>
+                    <InlineUIContainer>
+                        <Image
+
+                            d:DesignUseLayoutRounding="True" Width="379" UseLayoutRounding="True" Stretch="Fill" RenderTransformOrigin="0.125,0.413" Height="266" Source="/DaVinci;component/Im/It_artists/Bot_ph.jpg"/>
+                    </InlineUIContainer>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Отец будущего художника был кожевником. Примерно в 1458 году маленький Сандро уже работал подмастерьем в ювелирной мастерской, которая принадлежала одному из его старших братьев. Но он там долго не задержался, и уже в начале 1460-х годов был записан в ученики к художнику Фра Филиппе Липпи."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Годы в художественной мастерской Липпи проходили весело и продуктивно. Художник и его ученик хорошо ладили между собой. Впоследствии Липпи сам стал учеником Боттичелли. С 1467 года Сандро открыл свою собственную мастерскую."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Первый свой заказ Боттичелли выполнил для зала суда. Это было в 1470 году. К 1475 году Сандро Боттичелли был вполне известным и востребованным мастером. Он стал создавать фрески, писать картины для церквей."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="   Боттичелли считали «своим» человеком практически везде, в том числе и в богатых королевских семьях. Так, Лоренцо ди Пьерфранческо де Медичи, когда купил себе виллу, пригласил Сандро Боттичелли жить у него и писать картины для интерьера. Именно в это время Боттичелли пишет две свои самые знаменитые картины – «Весна» и «Рождение Венеры». Обе картины представлены на нашем сайте с подробным описанием."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="   К 1481 году Боттичелли отправился в Рим по приглашению папы Сикста IV. Он принимал участие в росписи Сикстинской капеллы, которую только-только закончили строить."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="   После смерти отца в 1482 году, Боттичелли вернулся в свою родную Флоренцию. Пережив трагедию, художник взялся снова за картины. Заказчики толпами шли в его мастерскую, поэтому некоторые работы выполняли ученика мастера, а он же брался только за более сложные и престижные заказы. Это время было пиком славы Сандро Боттичелли. Он слыл самым лучшим художником Италии."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="   Но через десять лет власть сменилась. На трон взошел Савонарола, который презирал Медичей, их роскошь, продажность. Боттичелли пришлось нелегко. К тому же в 1493 году умер брат Боттичелли – Джованни, которого он очень любил. Боттичелли лишился всякой поддержки. Хоть этот период длился недолго, потому что в 1498 году Савонарол был отлучен от церкви и сожжен на костре публично, все же он был очень сложным."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="   К концу своей жизни Боттичелли был очень одинок. О его былой славе не осталось и следа. Его отвергали как художника, и не делали больше заказов. Умер он в 1510 году."/>
+                </Paragraph>
+            </FlowDocument>
+
+        </RichTextBox>
+
+    </Grid>
+</Window>
+

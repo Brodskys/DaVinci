@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55EE8C36-4013-4473-BA63-6FBFF48FE754}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DaVinci</RootNamespace>
+    <AssemblyName>DaVinci</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.BarCode.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Charts.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Editors.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Gauge.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.MicroCharts.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Ribbon.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Shared.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.SyntaxEditor.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Text.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Views.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Wizard.Wpf, Version=17.2.662.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="It_tvor\Hs_San.xaml.cs">
+      <DependentUpon>Hs_San.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Kar_kart.xaml.cs">
+      <DependentUpon>Kar_kart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Hs_Kar.xaml.cs">
+      <DependentUpon>Hs_Kar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Ph_Kar.xaml.cs">
+      <DependentUpon>Ph_Kar.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Be.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Is.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Hs_San.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="It_tvor\Kar_kart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="It_tvor\Botich_kart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Dav_kart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Hs_Kar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="It_tvor\Hs_Botich.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Hs_Dav.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Hs_Maz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Hs_mik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Maz_kart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Mik_kart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Ph_Kar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="It_tvor\Ph_Botich.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Ph_Dav.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Ph_Maz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Ph_mik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\Ph_San.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="It_tvor\San_kart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Nl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Start.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Be.xaml.cs">
+      <DependentUpon>Be.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Im\It_artists\bot\ContentProvider_bot.cs" />
+    <Compile Include="Im\It_artists\car\ContentProvider_car.cs" />
+    <Compile Include="Im\It_artists\dav\ContentProvider_dav.cs" />
+    <Compile Include="Im\It_artists\maz\ContentProvider_maz.cs" />
+    <Compile Include="Im\It_artists\mik\ContentProvider_mik.cs" />
+    <Compile Include="Im\It_artists\san\ContentProvider_san.cs" />
+    <Compile Include="Is.xaml.cs">
+      <DependentUpon>Is.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It.xaml.cs">
+      <DependentUpon>It.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Botich_kart.xaml.cs">
+      <DependentUpon>Botich_kart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Dav_kart.xaml.cs">
+      <DependentUpon>Dav_kart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Hs_Botich.xaml.cs">
+      <DependentUpon>Hs_Botich.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Hs_Dav.xaml.cs">
+      <DependentUpon>Hs_Dav.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Hs_Maz.xaml.cs">
+      <DependentUpon>Hs_Maz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Hs_mik.xaml.cs">
+      <DependentUpon>Hs_mik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Maz_kart.xaml.cs">
+      <DependentUpon>Maz_kart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Mik_kart.xaml.cs">
+      <DependentUpon>Mik_kart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Ph_Botich.xaml.cs">
+      <DependentUpon>Ph_Botich.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Ph_Dav.xaml.cs">
+      <DependentUpon>Ph_Dav.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Ph_Maz.xaml.cs">
+      <DependentUpon>Ph_Maz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Ph_mik.xaml.cs">
+      <DependentUpon>Ph_mik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\Ph_San.xaml.cs">
+      <DependentUpon>Ph_San.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="It_tvor\San_kart.xaml.cs">
+      <DependentUpon>San_kart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainViewModel_bot.cs" />
+    <Compile Include="MainViewModel_dav.cs" />
+    <Compile Include="MainViewModel_kar.cs" />
+    <Compile Include="MainViewModel_maz.cs" />
+    <Compile Include="MainViewModel_mik.cs" />
+    <Compile Include="MainViewModel_san.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mvvm\ViewModelBase_bot.cs" />
+    <Compile Include="Mvvm\ViewModelBase_car.cs" />
+    <Compile Include="Mvvm\ViewModelBase_dav.cs" />
+    <Compile Include="Mvvm\ViewModelBase_maz.cs" />
+    <Compile Include="Mvvm\ViewModelBase_mik.cs" />
+    <Compile Include="Mvvm\ViewModelBase_san.cs" />
+    <Compile Include="Nl.xaml.cs">
+      <DependentUpon>Nl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="O_pr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="O_pr.Designer.cs">
+      <DependentUpon>O_pr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RF.xaml.cs">
+      <DependentUpon>RF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="O_pr.resx">
+      <DependentUpon>O_pr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Flag\RF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Flag\It.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Flag\Is.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Flag\Fr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Flag\Bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Flag\Nd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Lg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Vinci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Santi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Botticelli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Michelangelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Mazachcho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Karavadzho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\NI_artists\V_Gog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\NI_artists\Rebr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\NI_artists\Rybens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\NI_artists\potr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\NI_artists\Ya_Verm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\NI_artists\Ykb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\RF_artists\Ivaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Is_artists\Dali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\RF_artists\Kz_Mal.png" />
+    <Resource Include="Im\RF_artists\Repin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\RF_artists\Shihkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\RF_artists\Serov.png" />
+    <Resource Include="Im\RF_artists\Syrikov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Is_artists\Pikasso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Is_artists\Goya.png" />
+    <Resource Include="Im\Is_artists\Greko.png" />
+    <Resource Include="Im\Is_artists\Myril.png" />
+    <Resource Include="Im\Is_artists\Velaskes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\myGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\Maps.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\BE_artists\Magrit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\BE_artists\Delvo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\BE_artists\Ek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\BE_artists\Deik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\dv_ph.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\dav\glr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\rg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\lef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\fon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Bot_ph.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\san\glr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\bot\glr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Kartini\Accademia_Carrara.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Adorazione_dei_Magi.jpg" />
+    <Resource Include="Im\It_artists\Kartini\A_Virgem_e_o_Menino_com_um_anjo.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Baptism_of_Christ.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Benois_Madonna.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Dama_con_ermellino.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Dante.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Descoberta_do_corpo_de_Holofernes.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Detroit.jpg" />
+    <Resource Include="Im\It_artists\Kartini\fortezza.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Ginevra_de_Benci.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Hermitage.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Ioann_Krestitel.jpg" />
+    <Resource Include="Im\It_artists\Kartini\La_Belle_Ferronnière.jpg" />
+    <Resource Include="Im\It_artists\Kartini\MadonnaRoseto.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Madonna_Litta.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Madonna_of_the_Carnation.jpg" />
+    <Resource Include="Im\It_artists\Kartini\medici_bergamo.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Mona_Lisa.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Nativity.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Portrait_of_a_Musician.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Retour_de_Judith.JPG" />
+    <Resource Include="Im\It_artists\Kartini\Sandro.jpg" />
+    <Resource Include="Im\It_artists\Kartini\The_Virgin_and_Child_Enthroned.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Vergine_delle_Rocce.jpg" />
+    <Resource Include="Im\It_artists\Kartini\YoungMan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Kartini\La-Donna-Velata.jpg" />
+    <Resource Include="Im\It_artists\Kartini\madonnaansidei.jpg" />
+    <Resource Include="Im\It_artists\Kartini\madonna_di_folinio.jpg" />
+    <Resource Include="Im\It_artists\Kartini\svyatoy_georgiy_i_drakon.jpg" />
+    <Resource Include="Im\It_artists\Kartini\triumph_Galatei.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Kartini\obruchenie_devi_Marii.jpg" />
+    <Resource Include="Im\It_artists\Kartini\portrait_castiglione.jpg" />
+    <Resource Include="Im\It_artists\Kartini\preobrajenie.jpg" />
+    <Resource Include="Im\It_artists\Kartini\sikstinskaya_Madonna.jpg" />
+    <Resource Include="Im\It_artists\Kartini\sviatoimihailidiavol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\mik_ph.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\mik\glr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Kartini\delfiiskaya-sivilla.jpg" />
+    <Resource Include="Im\It_artists\Kartini\eritreiskaya-sivilla.jpg" />
+    <Resource Include="Im\It_artists\Kartini\kumskaya-sivilla.jpg" />
+    <Resource Include="Im\It_artists\Kartini\liviiskaya-sivilla.jpg" />
+    <Resource Include="Im\It_artists\Kartini\persidskaya-sivilla.jpg" />
+    <Resource Include="Im\It_artists\Kartini\prorok-ieremiya.jpg" />
+    <Resource Include="Im\It_artists\Kartini\prorok-isaya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Maz_ph.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\maz\glr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Kartini\kreschenie-neofitov.jpg" />
+    <Resource Include="Im\It_artists\Kartini\madonna-s-mladencem-i-sv.-annoy.jpg" />
+    <Resource Include="Im\It_artists\Kartini\petr-iscelyaet-bolnogo-svoey-tenyu.jpg" />
+    <Resource Include="Im\It_artists\Kartini\raspyatie-apostola-petra.jpg" />
+    <Resource Include="Im\It_artists\Kartini\raspyatie.jpg" />
+    <Resource Include="Im\It_artists\Kartini\razdacha-imuschestva-i-smert-ananii.jpg" />
+    <Resource Include="Im\It_artists\Kartini\svyatoy-ieronim-i-svyatoy-ioann-krestitel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vopr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Im\2Dmg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Kar_ph.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\car\glr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\It_artists\Kartini\Good_Luck.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Madonna_of_the_Rosary.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Medusa.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Meshestvo.jpg" />
+    <Resource Include="Im\It_artists\Kartini\michelangelo.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Natchis.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Obrshenie_Savla.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Taking_of_Christ.jpg" />
+    <Resource Include="Im\It_artists\Kartini\The_Cardsharps.jpg" />
+    <Resource Include="Im\It_artists\Kartini\Yshen v Emmayse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Im\vopr.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

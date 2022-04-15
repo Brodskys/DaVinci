@@ -1,0 +1,20 @@
+﻿<Window x:Class="DaVinci.It_tvor.Kar_kart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaVinci.It_tvor"
+         xmlns:gr="clr-namespace:DaVinci"
+         mc:Ignorable="d" Height="545.212" Width="889.695" ResizeMode="CanMinimize" Icon="/DaVinci;component/Im/Lg.png" WindowStartupLocation="CenterScreen" Closing="Window_Closing" MouseLeave="Window_MouseLeave" MouseEnter="Window_MouseEnter" Loaded="Window_Loaded" >
+    <Window.DataContext>
+        <gr:MainViewModel_kar/>
+    </Window.DataContext>
+    <Grid>
+        <Image Source="/DaVinci;component/Im/fon.png" Stretch="Fill" RenderTransformOrigin="0.505,0.43"/>
+
+        <Image x:Name="_image" HorizontalAlignment="Left" Height="194" VerticalAlignment="Top" Width="171" Margin="360,123,0,0" Source="{Binding CurrentImage}" Stretch="Fill" />
+        <Image x:Name="lef" Margin="0,231,846,230" Source="/DaVinci;component/Im/lef.png" Stretch="Fill" MouseLeftButtonDown="Lef_MouseLeftButtonDown"/>
+        <Image x:Name="rig" Margin="846,231,0,230" Source="/DaVinci;component/Im/rg.png" Stretch="Fill"  MouseLeftButtonDown="Rig_MouseLeftButtonDown" />
+        <Label x:Name="name_kart" Content="Нарцисс" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="327,349,0,0" VerticalAlignment="Top" Width="234" Height="32" VerticalContentAlignment="Center" FontSize="13" FontFamily="Comic Sans MS" />
+    </Grid>
+</Window>

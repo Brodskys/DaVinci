@@ -1,0 +1,23 @@
+﻿<Window x:Class="DaVinci.Is"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaVinci"
+        mc:Ignorable="d" Height="478.5" Width="803.5" WindowStartupLocation="CenterScreen" Closing="Window_Closing" ResizeMode="CanMinimize" Icon="Im/Lg.png" Background="#FF722525" Title="DaVinci">
+    <Grid>
+        <Image x:Name="Is_im" HorizontalAlignment="Left" Height="406" Margin="-31,10,0,0" VerticalAlignment="Top" Width="413" Source="/DaVinci;component\Im\Is_artists\Dali.png" />
+        <Rectangle x:Name="rct" Fill="#FFC18823" Height="45" Margin="618,72,0,0" RadiusX="9" Stroke="#FF131111" StrokeThickness="0" Width="9" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="Dali" Content="Сальвадора Дали" HorizontalAlignment="Left" Margin="414,72,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Dali_Click" />
+        <Button x:Name="Pikasso" Content="Пабло Пикассо" HorizontalAlignment="Left" Margin="414,122,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Pikasso_Click" />
+        <Button x:Name="Velaskes" Content="Диего Веласкес" HorizontalAlignment="Left" Margin="414,172,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Velaskes_Click" />
+        <Button x:Name="Myril" Content="Эстебан Мурильо" HorizontalAlignment="Left" Margin="414,223,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Myril_Click" />
+        <Button x:Name="Goya" Content="Франсиско Гойя" HorizontalAlignment="Left" Margin="414,273,0,0" VerticalAlignment="Top" Width="204" Height="45" Click="Goya_Click" />
+        <Button x:Name="Greko" Content="Эль Греко" HorizontalAlignment="Left" Margin="414,323,0,0" VerticalAlignment="Top" Width="203" Height="45" Click="Greko_Click" />
+        <Image x:Name="help" Margin="1,4,756,410" Source="Im/vopr.png" Stretch="Fill" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+        <Label x:Name="_3" Content="Выбор направления поиска" HorizontalAlignment="Left" Margin="554,1,0,0" VerticalAlignment="Top" Height="35" Width="232" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="_1" Content="Фотография художника" HorizontalAlignment="Left" Margin="28,411,0,0" VerticalAlignment="Top" Height="35" Width="300" FontSize="18" FontFamily="Arial Black"/>
+        <Label x:Name="_2" Content="Выбор художника" HorizontalAlignment="Left" Margin="420,366,0,0" VerticalAlignment="Top" Height="35" Width="204" FontSize="18" FontFamily="Arial Black"/>
+
+    </Grid>
+</Window>

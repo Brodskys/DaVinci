@@ -1,0 +1,24 @@
+﻿<Window x:Class="DaVinci.Nl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaVinci"
+        mc:Ignorable="d" Height="478.5" Width="803.5" WindowStartupLocation="CenterScreen" Closing="Window_Closing" ResizeMode="CanMinimize" Icon="Im/Lg.png" Background="#FF814827" Title="DaVinci">
+    <Grid Margin="0,0,78,14">
+        <Image x:Name="Nl_im" HorizontalAlignment="Left" Height="406" Margin="0,19,0,0" VerticalAlignment="Top" Width="413" Source="/DaVinci;component\Im\NI_artists\V_Gog.png" />
+        <Button x:Name="V_Gog" Content="Винсент Ван Гог" HorizontalAlignment="Left" Margin="433,63,-80,0" VerticalAlignment="Top" Width="209" Height="45" Click="V_Gog_Click" />
+        <Button x:Name="Reb" Content="Рембрандт" HorizontalAlignment="Left" Margin="434,113,-81,0" VerticalAlignment="Top" Width="209" Height="45" Click="Reb_Click" />
+        <Button x:Name="Ryb" Content="Питер Пауль Рубенс" HorizontalAlignment="Left" Margin="434,163,-81,0" VerticalAlignment="Top" Width="209" Height="45" Click="Ryb_Click" />
+        <Button x:Name="Potr" Content="Паулюс Поттер" HorizontalAlignment="Left" Margin="434,213,-81,0" VerticalAlignment="Top" Width="209" Height="45" Click="Potr_Click" />
+        <Button x:Name="Verm" Content="Ян Вермеер" HorizontalAlignment="Left" Margin="434,263,-81,0" VerticalAlignment="Top" Width="209" Height="45" Click="Verm_Click" />
+        <Button x:Name="Ykb" Content="Якоб Йорданс" HorizontalAlignment="Left" Margin="435,313,-81,0" VerticalAlignment="Top" Width="208" Height="45" Click="Ykb_Click" />
+        <Rectangle x:Name="rct" Fill="#FFC37A31" HorizontalAlignment="Left" Height="45" Margin="642,63,-64,0" Stroke="#FF131111" StrokeThickness="0" VerticalAlignment="Top" Width="9"/>
+        <Image x:Name="help" Margin="0,0,674,399" Source="Im/vopr.png" Stretch="Fill" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+        <Label x:Name="_3" Content="Выбор направления поиска" HorizontalAlignment="Left" Margin="557,-1,-79,0" VerticalAlignment="Top" Height="35" Width="232" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="_2" Content="Выбор художника" HorizontalAlignment="Left" Margin="443,355,0,0" VerticalAlignment="Top" Height="35" Width="204" FontSize="18" FontFamily="Arial Black"/>
+        <Label x:Name="_1" Content="Фотография художника" HorizontalAlignment="Left" Margin="71,415,0,-15" VerticalAlignment="Top" Height="35" Width="300" FontSize="18" FontFamily="Arial Black"/>
+
+    </Grid>
+
+</Window>

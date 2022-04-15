@@ -1,0 +1,148 @@
+﻿<Window x:Class="DaVinci.It_tvor.Hs_mik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaVinci.It_tvor"
+       mc:Ignorable="d" Height="638.395" Width="785.929" Background="#FFEEECE0" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Closing="Window_Closing" Icon="/DaVinci;component/Im/Lg.png">
+    <Grid Margin="0,0,4,0">
+
+        <RichTextBox HorizontalAlignment="Left" Height="599" VerticalAlignment="Top" IsReadOnly="True"  Width="769" Background="#FFEEECE0"  ScrollViewer.VerticalScrollBarVisibility="Auto" Focusable="False"  >
+            <FlowDocument>
+                <BlockUIContainer Child="{x:Null}"/>
+                <Paragraph TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Биография Микеланджело"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Микеланджело Буонарроти (1475-1564) – великий итальянский художник эпохи Ренессанса. Также известен как скульптор, мыслитель, архитектор и поэт. Интересная, насыщенная биография Микеланджело полна ярких моментов, драматических событий."/>
+                </Paragraph>
+                <Paragraph Margin="0,Auto,Auto,Auto" TextAlignment="Center">
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <InlineUIContainer>
+                        <Image
+
+                            d:DesignUseLayoutRounding="True" Width="317" UseLayoutRounding="True" Stretch="Fill" RenderTransformOrigin="0.125,0.413" Height="266" Source="/DaVinci;component/Im/It_artists/mik_ph.jpg"/>
+                    </InlineUIContainer>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="                                                               Детские и юные годы"/>
+                </Paragraph>
+                <Paragraph Margin="0,Auto,Auto,Auto" TextAlignment="Justify" TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Микеланджело родился 6 марта 1475 г., в г.Капрезе, в обедневшей аристократической семье. В 1481 г. будущий художник потерял мать, а 4 года спустя его отправили в школу во Флоренции. Особых наклонностей к обучению обнаружено не было. Юноша предпочитал общаться с художниками и перерисовывать церковные фрески."/>
+                </Paragraph>
+                <Paragraph TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Творческий путь"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Когда Микеланджело было 13 лет, отец смирился с тем, что в семье растет художник. Вскоре он стал учеником Д. Гирландайо. Через год Микеланджело поступил в школу скульптора Б. ди Джованни, которой покровительствовал сам Лоренцо ди Медичи."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Микеланджело обладал еще одним даром – находить влиятельных друзей. Он сдружился со вторым сыном Лоренцо, Джованни. С течением времени Джованни стал папой Львом X. Также Микеланджело дружил с Джулио Медичи, ставшим впоследствии папой Климентом VII."/>
+                </Paragraph>
+                <Paragraph Margin="260,Auto,Auto,Auto">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Расцвет и признание"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="1494-1495 гг. характеризуются расцветом творчества великого художника. Он перебирается в Болонью, усердно работает над скульптурами для Арки св. Доминика. Через шесть лет, вернувшись во Флоренцию, он работал по заказу.Она на многие столетия стала идеалом изображения тела человека."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="В 1505 г. Микеланджело, по приглашению папы Юлия II, прибыл в Рим. Понтифик заказалему гробницу. С 1508 по 1512 гг. Микеланджело работал над вторым заказом папы. Он расписывал потолок Сикстинской капеллы, которая представляла библейскую историю, начиная с самого сотворения мира, и заканчивая великим потопом. Сикстинская капелла включает более трехсот фигур. Краткая биография Микеланджело Буонарроти говорит о нем, как о страстной и сложной личности. Их отношения с папой Юлием II были непростыми. Но в итоге он получил третий заказ от понтифика – создать его статую. "/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Важнейшую роль в  жизни великого скульптора сыграло его назначение главным архитектором собора Св. Петра. Там он работал бесплатно. Художник спроектировал гигантский купол собора, который был завершен только после его кончины. "/>
+                </Paragraph>
+                <Paragraph TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Окончание земного пути"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Микеланджело прожил долгую жизнь. Он скончался 18 февраля 1564 г. Перед тем, как отойти в мир иной, он продиктовал немногочисленным свидетелям свое завещание. По словам умирающего, он отдал душу в Божьи руки, тело – земле, а все свое имущество – родственникам."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="По распоряжению папы Пия IV, Микеланджело был похоронен в Риме. В соборе Св. Петра ему была построена гробница. 20 февраля 1564 г. тело великого художника временно поместили в базилике Санти-Апостоли."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="В марте Микеланджело тайно перевезли во Флоренцию и погребли в церкви Санта-Кроче, неподалеку от Н. Макиавелли. По характеру своего мощного таланта, Микеланджело был в большей степени скульптором. Но самые смелые и дерзкие замыслы он смог воплотить именно благодаря живописи."/>
+                </Paragraph>
+
+
+
+
+
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>

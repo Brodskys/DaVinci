@@ -1,0 +1,26 @@
+﻿<Window x:Class="DaVinci.Be"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaVinci"
+        mc:Ignorable="d" Height="407.722" Width="729.05" Closing="Window_Closing" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Icon="Im/Lg.png" Background="#FF2D6848" Title="DaVinci">
+    <Grid Margin="0,0,4,1">
+
+
+        <Image x:Name="BE_im" HorizontalAlignment="Left" Height="341" Margin="-22,10,0,0" VerticalAlignment="Top" Width="452" Source="Im/BE_artists/Magrit.png"  />
+        <Grid Margin="0,0,-3,-3">
+            <Button x:Name="Magrit" Content="Рене Магритт" HorizontalAlignment="Left" Margin="336,89,-38,0" VerticalAlignment="Top" Width="209" Height="45" Click="Magrit_Click" />
+            <Button x:Name="Delvo" Content="Поль Дельво" HorizontalAlignment="Left" Margin="336,139,-38,0" VerticalAlignment="Top" Width="209" Height="45" Click="Delvo_Click"  />
+            <Button x:Name="Ek" Content="Ян Ван Эйк" HorizontalAlignment="Left" Margin="336,189,-38,0" VerticalAlignment="Top" Width="209" Height="45" Click="Ek_Click"  />
+            <Button x:Name="Deik" Content="Антонис Ван Дейк" HorizontalAlignment="Left" Margin="336,239,-38,0" VerticalAlignment="Top" Width="209" Height="45" Click="Deik_Click"  />
+            <Image x:Name="help" Margin="1,3,676,338" Source="Im/vopr.png" Stretch="Fill" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+
+        </Grid>
+        <Rectangle x:Name="rct" Fill="#FF8D294D" HorizontalAlignment="Left" Height="45" Margin="546,89,0,0" Stroke="#FF131111" StrokeThickness="0" VerticalAlignment="Top" Width="9"/>
+        <Label x:Name="_1" Content="Фотография художника" HorizontalAlignment="Left" Margin="19,343,0,0" VerticalAlignment="Top" Height="35" Width="300" FontSize="18" FontFamily="Arial Black"/>
+        <Label x:Name="_3" Content="Выбор направления поиска" HorizontalAlignment="Left" Margin="480,9,0,0" VerticalAlignment="Top" Height="35" Width="232" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="_2" Content="Выбор художника" HorizontalAlignment="Left" Margin="339,283,0,0" VerticalAlignment="Top" Height="35" Width="204" FontSize="18" FontFamily="Arial Black"/>
+
+    </Grid>
+</Window>

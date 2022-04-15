@@ -1,0 +1,111 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaVinci.It_tvor"
+        xmlns:editors="http://schemas.actiprosoftware.com/winfx/xaml/editors" x:Class="DaVinci.It_tvor.Hs_Dav"
+        mc:Ignorable="d" Height="638.395" Width="785.929" Background="#FFEEECE0" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Closing="Window_Closing" Icon="/DaVinci;component/Im/Lg.png" Title="DaVinci">
+    <Grid Margin="0,0,4,0">
+
+        <RichTextBox HorizontalAlignment="Left" Height="599" VerticalAlignment="Top" IsReadOnly="True"  Width="769" Background="#FFEEECE0"  ScrollViewer.VerticalScrollBarVisibility="Auto" Focusable="False"  >
+
+
+            <FlowDocument>
+                <BlockUIContainer Child="{x:Null}"/>
+                <Paragraph TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Биография Леонардо да Винчи"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Леонардо да Винчи (Леонардо ди сер Пьеро да Винчи) (1452 –1519) – величайший итальянский художник, сделавший огромный вклад в искусство Высокого Возрождения, гениальный ученый, изобретатель, мыслитель, музыкант, ярчайший пример «универсального человека»."/>
+                </Paragraph>
+                <Paragraph Margin="40,Auto,Auto,Auto" TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="     "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <InlineUIContainer>
+                        <Image
+
+                            d:DesignUseLayoutRounding="True" Width="317" UseLayoutRounding="True" Stretch="Fill" RenderTransformOrigin="0.125,0.413" Height="266">
+                            <Image.Source>
+                                <BitmapImage
+                                    UriSource="/DaVinci;component/Im/It_artists/dv_ph.jpg" CacheOption="OnLoad" CreateOptions="IgnoreImageCache" />
+                            </Image.Source>
+                        </Image>
+                    </InlineUIContainer>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="                                                               Детство и образование"/>
+                </Paragraph>
+                <Paragraph Margin="0,Auto,Auto,Auto" TextAlignment="Justify" TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Леонардо да Винчи родился 15 апреля 1452 года в селении Анкиато вблизи города Винчи (отсюда и произошла приставка к его фамилии). Отец и мать мальчика не были женаты, поэтому первые годы Леонардо провел с матерью. Вскоре отец, служивший нотариусом, забрал его к себе в семью."/>
+                </Paragraph>
+                <Paragraph Margin="0,Auto,Auto,Auto" TextAlignment="Justify" TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="В 1466 году да Винчи поступил подмастерьем в мастерскую художника Верроккьо во Флоренции, где также обучались Перуджино, Аньоло ди Поло, Лоренцо ди Креди, работал Ботичелли, бывал Гирландайо и др. В это время Леонардо увлекся рисованием, скульптурой и моделированием, изучал металлургию, химию, черчение, осваивал работу с гипсом, кожей, металлом. В 1473 году да Винчи получил квалификацию мастера в Гильдии Святого Луки."/>
+                </Paragraph>
+                <Paragraph TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Раннее творчество и научная деятельность"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="      В начале творческого пути Леонардо практически все свое время посвящал работе над картинами. В 1472 – 1477 художник создал картины «Крещение Христа», «Благовещение», «Мадонна с вазой». В конце 70-х годов закончил «Мадонну с цветком» («Мадонну Бенуа»). В 1481 году была создана первая крупная работа в творчестве Леонардо да Винчи – «Поклонение волхвов».              &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;           &#x9;"/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="В 1482 году Леонардо переезжает в Милан. С 1487 года да Винчи занимался разработкой летательной машины, которая была основана на птичьем полете. Леонардо создал сначала простейший аппарат на основе крыльев, а затем разработал механизм аэроплана с полным управлением. Однако воплотить идею в жизнь не удалось, так как у исследователя не было мотора. Кроме того, Леонардо изучал анатомию и архитектуру, открыл ботанику как самостоятельную дисциплину."/>
+                </Paragraph>
+                <Paragraph TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Зрелый период творчества"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="В 1490 году да Винчи создает картину «Дама с горностаем», а также знаменитый рисунок «Витрувианский человек», который иногда называют «каноническими пропорциями». В 1495 – 1498 годах Леонардо работал над одним из самых главных своих произведений – фреской «Тайная вечеря» в Милане в монастыре Санта-Мария деле Грацие."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="В 1502 году да Винчи поступил на службу военным инженером и архитектором к Чезаре Борджиа. В 1503 художник создает картину «Мона Лиза» («Джоконда»). С 1506 года Леонардо служит при короле Франции Людовике XII."/>
+                </Paragraph>
+                <Paragraph TextAlignment="Center">
+                    <Run FontSize="20" FontFamily="Microsoft YaHei" Text="Последние годы"/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="В 1512 году художник под покровительством папы Льва Х переезжает в Рим. С 1513 по 1516 года Леонардо да Винчи живет в Бельведере, работает над картиной «Иоанн Креститель». В 1516 году Леонардо по приглашению французского короля поселяется в замке Кло-Люсе. За два года до смерти у художника онемела правая рука, ему было трудно самостоятельно передвигаться. Последний годы своей краткой биографии Леонардо да Винчи провел в постели."/>
+                </Paragraph>
+                <Paragraph TextIndent="20">
+                    <Run FontSize="16" FontFamily="Nirmala UI" Text="Умер великий художник и ученый Леонардо да Винчи 2 мая 1519 года в замке Кло-Люсе близ города Амбуаз во Франции."/>
+                    <Run Text=" "/>
+                    <InlineUIContainer/>
+                </Paragraph>
+            </FlowDocument>
+
+        </RichTextBox>
+
+    </Grid>
+</Window>
